@@ -18,13 +18,8 @@ class NXorso:
 
 class NXentry:
     # equivalent to SASentry
-    def __init__(self, parent=None)
-        self._nxdata = []
-
-    def create_NXdata(self, nxdata):
-        # nxdata should be an instance of NXdata
-        if isinstance(nxdata, NXdata):
-            self._nxdata.append(nxdata)
+    def __init__(self, nxorso):
+        pass
 
     @property
     def nxdata():
@@ -34,7 +29,7 @@ class NXentry:
 class NXdata:
     # equivalent to SASdata
     # stores Q/I data
-    def __init__(self, qz, I, name='data', Idev=None, Qdev=None, nxentry=None):
+    def __init__(self, nxentry, qz, I, name='data', Idev=None, Qdev=None, nxentry=None):
         pass
 
     @property
