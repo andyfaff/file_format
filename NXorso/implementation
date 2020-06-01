@@ -1,0 +1,67 @@
+class NXorso:
+    # equivalent to SASroot
+
+    def __init__(self)
+        pass
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self):
+        pass
+
+    def save(self):
+        # saves the file
+        pass
+    def close(self):
+        pass
+
+class NXentry:
+    # equivalent to SASentry
+    def __init__(self, parent=None)
+        self._nxdata = []
+
+    def create_NXdata(self, nxdata):
+        # nxdata should be an instance of NXdata
+        if isinstance(nxdata, NXdata):
+            self._nxdata.append(nxdata)
+
+    @property
+    def nxdata():
+        #return list of NXdata associated with file
+        self._nxdata
+
+class NXdata:
+    # equivalent to SASdata
+    # stores Q/I data
+    def __init__(self, qz, I, name='data', Idev=None, Qdev=None, nxentry=None):
+        pass
+
+    @property
+    def data(self):
+        # returns the numeric data?
+        pass
+
+    @property
+    def I(self):
+        pass
+
+    @property
+    def Idev(self):
+        pass
+
+    @property
+    def Qz(self):
+        pass
+
+    @property
+    def Qdev(self):
+        pass
+
+class I():
+    # intensity data
+    pass
+
+class Qz():
+    # Q data
+    pass
